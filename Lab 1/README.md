@@ -2,7 +2,7 @@
 
 # Staging Interaction
 
-\*\***NAME OF COLLABORATOR HERE**\*\*
+\*\***Cheng Peng (cp693), Rui Liu (cl2772), Weiching Chen (wc683)**\*\*
 
 In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
 
@@ -63,12 +63,20 @@ Labs are due on Mondays. Make sure this page is linked to on your main class hub
 To stage an interaction with your interactive device, think about:
 
 _Setting:_ Where is this interaction happening? (e.g., a jungle, the kitchen) When is it happening?
+The interaction takes place in public spaces such as city streets, sidewalks, or parks, where surveillance cameras are commonly present. It happens in everyday conditions, daylight or nighttime. When people are moving through these spaces, and the environment naturally includes both passersby and surveillance infrastructure.
 
 _Players:_ Who is involved in the interaction? Who else is there? If you reflect on the design of current day interactive devices like the Amazon Alexa, it’s clear they didn’t take into account people who had roommates, or the presence of children. Think through all the people who are in the setting.
+Primary player: The wearer of the prototype. They are ordinary pedestrians, blending into the public environment while testing the device.
+Secondary players: People who photograph or record the wearer, whether intentionally (e.g., someone taking a picture) or incidentally (security staff monitoring, or surveillance cameras scanning the area).
+Bystanders: Other people in the public setting, who may notice the faint glow but are not directly involved in the interaction.
 
 _Activity:_ What is happening between the actors?
+The wearer simply walks through the environment while the device emits its continuous faint glow. Cameras, whether held by other people or mounted for surveillance , attempt to capture their face. Instead of a clear image, the recording device picks up a distorted pattern across the wearer’s features, disrupting recognition. The activity is passive for the wearer (no need for manual input) but active in its effect on cameras.
 
 _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening the fridge). 
+Wearer’s goal: Maintain anonymity and disrupt automated or casual attempts at video recording without needing to hide physically.
+Cameras’/recorders’ goal: Capture recognizable images of the person.
+Bystanders’ goal: Continue their everyday activities, some perhaps noticing or being curious about the glow.
 
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 
@@ -76,7 +84,8 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch seven storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the interactive device and the other characters in the scene. 
 
-\*\***Include pictures of your storyboards here**\*\*
+\*\***Include pictures of your[Note Aug 31, 2025 (2).pdf](https://github.com/user-attachments/files/22069084/Note.Aug.31.2025.2.pdf)
+ storyboards here**\*\*
 
 Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
 
@@ -89,7 +98,12 @@ Try physically acting out the interaction you planned. For now, you can just pre
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
+In practice, the prototype didn’t behave as subtly as we imagined. Using three phone flashlights hidden under a shirt made the glow much brighter and more obvious than expected. Instead of creating a faint, discreet effect, the prototype appeared more conspicuous, which leads to some unwanted attention.
+
+
 \*\***Are there new ideas that occur to you or your collaborator that come up from the acting?**\*\*
+
+Yes. We realized that experimenting with different materials could help us control transparency and diffusion. Testing fabrics or surfaces with varying levels of opacity might allow us to find the best balance between visibility to the human eye and distortion for the camera.
 
 
 ## Part C. Prototype the device
@@ -110,9 +124,21 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
+
+https://github.com/user-attachments/assets/e760d958-8c37-4ce0-b32b-e1b6a1ec4edf
+
+
+
+
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
 \*\***Show the follow-up work here.**\*\*
+
+
+
+https://github.com/user-attachments/assets/d6f84084-c3b4-4f05-9925-e6a456d12318
+
+
 
 
 ## Part E. Costume the device
@@ -121,18 +147,28 @@ Only now should you start worrying about what the device should look like. Devel
 
 Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
 
-\*\***Include sketches of what your devices might look like here.**\*\*
+\*\***Include sketches of what your devices might look like here.*<img width="2480" height="3508" alt="concept" src="https://github.com/user-attachments/assets/d8abb0ae-e500-444e-bda5-4c548b28e603" />
+*\*\*
+<img width="2480" height="3508" alt="concept-3iteration" src="https://github.com/user-attachments/assets/74c047be-a1a5-4388-bab5-6bb053cb12d0" />
+
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
+Since the project is rooted in anti-surveillance, the design naturally focuses on the most recognizable parts of the body, also the face. This concern guided us to position or wrap the device around these areas, ensuring it directly interferes with recognition systems. That priority inspired the different iterations we developed.
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
+
+https://github.com/user-attachments/assets/2a83b651-88f3-45a8-b093-40b5288edb95
+
+
+
+
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
-
+Cheng Peng, Rui, Weiching Chen
 
 
 # Staging Interaction, Part 2 
