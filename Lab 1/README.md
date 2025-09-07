@@ -238,6 +238,9 @@ I suddenly realized that under the interplay of infrared lights and normal visib
 
 You will be using your smartphone as a stand-in for the device you are prototyping. 
 
+https://github.com/user-attachments/assets/5a89995a-0afc-4dad-bd84-06f35fdfb912
+
+
 
 ## Part D. Wizard the device
 
@@ -270,4 +273,4 @@ A major concern is how to make the device discreet enough to blend into everyday
 
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
-Weiching Chen
+Cheng Peng, Rui, Weiching Chen
