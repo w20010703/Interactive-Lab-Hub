@@ -2,7 +2,7 @@
 
 # Staging Interaction
 
-\*\***Cheng Peng (cp693), Rui Liu (cl2772), Weiching Chen (wc683)**\*\*
+\*\***Weiching Chen (wc683)**\*\*
 
 In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
 
@@ -192,3 +192,82 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
+
+
+## Part A. Plan 
+
+To stage an interaction with your interactive device, think about:
+
+Setting: Where is this interaction happening? (e.g., a jungle, the kitchen) When is it happening?
+The interaction takes place in public spaces such as city streets, sidewalks, or parks, where surveillance cameras are commonly present. It happens in everyday conditions, daylight or nighttime. 
+\*\***This version of the design places particular emphasis on nighttime scenarios, where surveillance systems often rely on infrared and night vision cameras.**\*\* 
+When people are moving through these spaces, the environment naturally includes both passersby and surveillance infrastructure.
+
+Players: Who is involved in the interaction? Who else is there? If you reflect on the design of current day interactive devices like the Amazon Alexa, it’s clear they didn’t take into account people who had roommates, or the presence of children. Think through all the people who are in the setting.
+Primary player: The wearer of the prototype. They are ordinary pedestrians, blending into the public environment while testing the device.
+Secondary players: People who photograph or record the wearer, whether intentionally (e.g., someone taking a picture) or incidentally (security staff monitoring, or surveillance cameras scanning the area).
+Bystanders: Other people in the public setting, who may notice the faint glow but are not directly involved in the interaction.
+
+Activity: What is happening between the actors? 
+\*\***The wearer simply walks through the environment while the device emits its continuous faint glow and incorporates infrared lights (IR LEDs), which are invisible to the human eye but disrupt night vision cameras.**\*\*  
+Cameras, whether held by other people or mounted for surveillance, attempt to capture their face. Instead of a clear image, the recording device picks up a distorted pattern and IR overexposure across the wearer’s features, disrupting recognition. The activity is passive for the wearer (no need for manual input) but active in its effect on cameras.
+
+Goals: What are the goals of each player? (e.g., jumping to a tree, opening the fridge).
+Wearer’s goal: Maintain anonymity and disrupt automated or casual attempts at video recording without needing to hide physically, with enhanced protection during \*\***nighttime conditions.**\*\* 
+Cameras’/recorders’ goal: Capture recognizable images of the person.
+Bystanders’ goal: Continue their everyday activities, some perhaps noticing or being curious about the glow.
+
+The interactive device can be anything except a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light in both visible and infrared spectrums.
+
+
+## Part B. Act out the Interaction
+
+Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
+
+\*\***Are there things that seemed better on paper than acted out?**\*\*
+
+Since we did not have access to an actual infrared (IR) camera for testing, we relied on online documentation and case studies to evaluate feasibility. Honestly, the reported results were much better than expected — under IR-sensitive or night vision cameras, the wearer’s face is almost impossible to capture clearly. This suggests that while our prototype could only be imagined in practice, its real-world effectiveness might actually exceed what we initially designed on paper.
+
+
+\*\***Are there new ideas that occur to you or your collaborator that come up from the acting?**\*\*
+
+I suddenly realized that under the interplay of infrared lights and normal visible lights, the device at night could serve more than one purpose. Not only does it protect against surveillance cameras, but in very dark conditions it could also act as a safety signal to prevent accidents such as being hit by a car. This creates a dual effect — the wearer can be the “main character” illuminated for safety in one moment, and then almost invisible or unrecognizable to cameras the next.
+
+## Part C. Prototype the device
+
+You will be using your smartphone as a stand-in for the device you are prototyping. 
+
+
+## Part D. Wizard the device
+
+\*\***Include your first attempts at recording the set-up video here.**\*\*
+
+
+
+Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
+
+## Part E. Costume the device
+
+Only now should you start worrying about what the device should look like. Develop three costumes so that you can use your phone as this device.
+
+Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
+
+\*\***Include sketches of what your devices might look like here.*<img width="2480" height="3508" alt="concept" src="https://github.com/user-attachments/assets/d8abb0ae-e500-444e-bda5-4c548b28e603" />
+*\*\*
+<img width="2480" height="3508" alt="concept-3iteration" src="https://github.com/user-attachments/assets/74c047be-a1a5-4388-bab5-6bb053cb12d0" />
+
+
+\*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+
+A major concern is how to make the device discreet enough to blend into everyday life, so that the wearer is not drawing unnecessary attention. At the same time, there is an opportunity to use its appearance as a form of expression. By integrating infrared LEDs that are invisible to the human eye, the device looks ordinary under normal conditions while still disrupting night vision cameras. The faint visible glow, when present, can also be designed to resemble a subtle safety light, turning a potential vulnerability into an opportunity for both privacy and protection in dark environments. This balance between invisibility to surveillance and visibility for safety strongly shapes the way the device is designed to look.
+
+## Part F. Record
+
+\*\***Take a video of your prototyped interaction.**\*\*
+
+
+
+\*\***Please indicate who you collaborated with on this Lab.**\*\*
+Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
+Weiching Chen
