@@ -182,6 +182,8 @@ You will be assigned three partners from other groups. Go to their github pages,
 
 \*\***Summarize feedback from your partners here.**\*\*
 
+The project was praised for addressing the ethical issue of unwanted facial recognition with a strong technical execution, clear documentation, and tested user interaction, presenting an interesting concept that, while the video could be clearer, represents an excellent start.
+
 ## Make it your own
 
 Do last week’s assignment again, but this time: 
