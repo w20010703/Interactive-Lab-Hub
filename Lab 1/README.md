@@ -240,7 +240,9 @@ You will be using your smartphone as a stand-in for the device you are prototypi
 
 https://github.com/user-attachments/assets/5a89995a-0afc-4dad-bd84-06f35fdfb912
 
+https://github.com/user-attachments/assets/d6f84084-c3b4-4f05-9925-e6a456d12318
 
+(Ref: https://youtu.be/fywvB4Unjv4)
 
 ## Part D. Wizard the device
 
