@@ -221,6 +221,8 @@ Bystanders’ goal: Continue their everyday activities, some perhaps noticing or
 The interactive device can be anything except a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light in both visible and infrared spectrums.
 
 
+\*\***Include pictures of your [Note Aug 31, 2025 (2).pdf](https://github.com/user-attachments/files/22200572/Note.Aug.31.2025.2.pdf) storyboards here**\*\*
+
 ## Part B. Act out the Interaction
 
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
