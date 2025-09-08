@@ -248,13 +248,13 @@ https://github.com/user-attachments/assets/d6f84084-c3b4-4f05-9925-e6a456d12318
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
-https://github.com/user-attachments/assets/d6ae05a6-0508-4d0b-bbd8-93ffc282478a
-
-https://github.com/user-attachments/assets/9cfb12a1-9756-4cbd-af3f-1134ed48e7a4
-
+https://github.com/user-attachments/assets/e760d958-8c37-4ce0-b32b-e1b6a1ec4edf
 
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
+https://github.com/user-attachments/assets/d6ae05a6-0508-4d0b-bbd8-93ffc282478a
+
+https://github.com/user-attachments/assets/9cfb12a1-9756-4cbd-af3f-1134ed48e7a4
 
 
 ## Part E. Costume the device
@@ -275,7 +275,9 @@ A major concern is how to make the device discreet enough to blend into everyday
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
+\*\***Video demonstrating how it looks under an infrared camera.**\*\* 
 
+https://github.com/user-attachments/assets/fdece4ac-49f1-4c67-baf8-22da244108c2
 
 
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
