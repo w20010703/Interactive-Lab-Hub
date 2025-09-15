@@ -1,5 +1,5 @@
 # Interactive Prototyping: The Clock of Pi
-**NAMES OF COLLABORATORS HERE**
+Weiching Chen, Thomas Knoepffler, Xiaocheng Li, Dean Xu, Carrie Wang
 
 Does it feel like time is moving strangely during this semester?
 
