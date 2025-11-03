@@ -188,26 +188,22 @@ In an earlier version of this class students experimented with foundational comp
 
 <mark>We used TensorFlow's [arbitrary-image-stylization-v1](https://www.kaggle.com/models/google/arbitrary-image-stylization-v1), both 256-fp16 prediction and transfer models. Provided by Google.</mark>
 
-<mark> This lab is both an experiment in computational optimization, an artistic exploration with the nature of computer vision via style transfer, and the discourse created between vision and computation. The goal of this lab is to be able to capture the "artistic visuality" (i.e., the style) within classic paintings or textures, and transcribe them to live video feed through the Pi. The final deliverable is to create a narrative piece that will use style transfer for still and moving images, or the montage style of filmmaking (e.g., [Le Jetée (1962)](https://www.youtube.com/watch?v=Pf4AY_DI9BE). This film is also the main artistic inspiration for this project).</mark>
-
-![Le Jetee](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/le_jetee.jpg)
-
-<mark> _**Image Source:** Le Jetée (1962)_ </mark>
+<mark> This lab is both an experiment in computational optimization, an artistic exploration with the nature of computer vision via style transfer, and a discourse created between vision and computation. The goal of this lab is to be able to capture the "artistic visuality" (i.e., the style) within classic paintings or textures, and transcribe them to live video feed through the Pi. The final deliverable is to create a narrative piece that will use style transfer for still and moving images, or the montage style of filmmaking (e.g., [Le Jetée (1962)](https://www.youtube.com/watch?v=Pf4AY_DI9BE). This film is also the main artistic inspiration for this project).</mark>
 
 <mark> We began with loading up the Pi with modern art preset images that would serve as examples for style transfer. </mark>
 
 <p align="center">
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/kandinsky.jpg" alt="Kandinsky" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/lichtenstein.jpg" alt="Lichtenstein" width="49.5%"/>
-    <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/matisse.jpg" alt="Matisse" width="49.5%"/>
-    <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/mondrian.jpg" alt="Mondrian" width="49.5%"/>
-    <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/monet.jpg" alt="Monet" width="49.5%"/>
-    <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/munch.jpg" alt="Munch" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Styles/kandinsky.jpg" alt="Kandinsky" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Styles/lichtenstein.jpg" alt="Lichtenstein" width="49.5%"/>
+    <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Styles/matisse.jpg" alt="Matisse" width="49.5%"/>
+    <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Styles/mondrian.jpg" alt="Mondrian" width="49.5%"/>
+    <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Styles/monet.jpg" alt="Monet" width="49.5%"/>
+    <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Styles/munch.jpg" alt="Munch" width="49.5%"/>
 </p>
 
 <mark> _**Image Source(s):** Kandinsky, Composition VII (1913); Roy Lichtenstein, Drowning Girl (1963); Henri Matisse, The Dance (1910); Piet Mondrian, Composition with Red, Blue, and Yellow (1930); Claude Monet, Water Lilies (1914-26); Edvard Munch, The Scream (1893)._ </mark>
 
-<mark> From there, we loaded up style transfer models from TensorFlow onto the Pi and mapped the secondary input image to be the WebCam feed. We remapped the vector space so that it could accommodate the camera feed dimensions. We experimented with various output dimensions and decided on a relatively small resolution of 380 x 285, just so that the video can efficiently process at a higher frame rate. We also chose to use the 256-fp16 version of the model, which proved to be faster than the initial model we downloaded, which was the quantized verison. Our first FPS rate was around 2. Our final FPS rate ranged between 6-7. </mark>
+<mark> From there, we loaded up style-transfer models from TensorFlow onto the Pi and mapped the secondary input image to be the WebCam feed. We remapped the vector space so that it could accommodate the camera feed dimensions. We experimented with various output dimensions and decided on a relatively small resolution of 380 x 285, just so that the video can efficiently process at a higher frame rate. We also chose to use the 256-fp16 version of the model, which proved to be faster than the initial model we downloaded, which was the quantized version. Our first FPS rate was around 2. Our final FPS rate ranged between 6-7. </mark>
 
 <mark> Our code can be found at [stylecam_hdmi.py](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/style/stylecam_hdmi.py) </mark>
 
@@ -222,12 +218,12 @@ In an earlier version of this class students experimented with foundational comp
 ![Electronics Setup](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Electronics_Setup.jpg)
 
 <p align="center">
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/style_1.jpg" alt="Style 1" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/style_2.jpg" alt="Style 2" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/style_3.jpg" alt="Style 3" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/style_4.jpg" alt="Style 4" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/style_5.jpg" alt="Style 5" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/style_6.jpg" alt="Style 6" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Static/style_1.jpg" alt="Style 1" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Static/style_2.jpg" alt="Style 2" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Static/style_3.jpg" alt="Style 3" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Static/style_4.jpg" alt="Style 4" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Static/style_5.jpg" alt="Style 5" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Static/style_6.jpg" alt="Style 6" width="49.5%"/>
 </p>
 
 <details>
@@ -240,7 +236,7 @@ In an earlier version of this class students experimented with foundational comp
 Now flight test your interactive prototype and **note down your observations**:
 For example:
 
-1. When does it what it is supposed to do?
+1. When does it do what it is supposed to do?
 1. When does it fail?
 1. When it fails, why does it fail?
 1. Based on the behavior you have seen, what other scenarios could cause problems?
@@ -250,6 +246,38 @@ For example:
 1. Are there optimizations you can try to do on your sense-making algorithm.
 
 </details>
+
+**\*\*\*When does it do what it is supposed to do\*\*\***
+
+- <mark> Works when the style-transfer model and camera/display resolutions match (380×285). </mark>
+
+**\*\*\*When does it fail\*\*\***
+
+- <mark> Fails when model or style reference files are missing or corrupted. </mark>
+
+**\*\*\*When it fails, why does it fail\*\*\***
+
+- <mark> Fails due to CPU limits or mismatched input dimensions. </mark>
+
+**\*\*\*Based on the behavior you have seen, what other scenarios could cause problems\*\*\***
+
+- <mark> Can also fail from overheating and other perfomance-based issues. </mark>
+
+**\*\*\*Are they aware of the uncertainties in the system\*\*\***
+
+- <mark> Users would definitley be aware of low FPS and inconsistent visual styles. </mark>
+
+**\*\*\*How bad would they be impacted by a miss classification\*\*\***
+
+- <mark> Misclassifications are astheatic based. Do they match the style of the reference?. </mark>
+
+**\*\*\*How could change your interactive system to address this\*\*\***
+
+- <mark> Depending on how the user subjectively experiences the device, perhaps creating a narrative. </mark>
+
+**\*\*\*Are there optimizations you can try to do on your sense-making algorithm\*\*\***
+
+- <mark> Optimize by downscaling outputs, reducing frame rates, or using lighter models. </mark>
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 
@@ -266,9 +294,9 @@ For example:
 <mark> _**Cons:** It was difficult to find the model that would best suit the Pi. We ultimately found an appropriate model through Google because the archived CDN downloads that ChatGPT tried to provide were all broken or returned a 404. Not a single one provided by ChatGPT seems to work, which means that most models provided in chat could not be used._ </mark>
 
 <p align="center">
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/piTFT_1.jpg" alt="piTFT 1" width="33%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/piTFT_2.jpg" alt="piTFT 2" width="33%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/piTFT_3.jpg" alt="piTFT 3" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Screen/piTFT_1.jpg" alt="piTFT 1" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Screen/piTFT_2.jpg" alt="piTFT 2" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Screen/piTFT_3.jpg" alt="piTFT 3" width="33%"/>
 </p>
 
 <details>
@@ -291,14 +319,67 @@ During the lecture, we mentioned questions to help characterize a material:
 
 </details>
 
+**\*\*\*What can you use X for?\*\*\***
+
+- <mark> Real-time style transfer on live video from a Raspberry Pi webcam. </mark>
+
+**\*\*\*What is a good environment for X?\*\*\***
+
+- <mark> Cooler temperatures for CPU, stationary, close-up, and slow-moving subject. </mark>
+
+**\*\*\*What is a bad environment for X?\*\*\***
+
+- <mark> High temperatures and fastest, rapid movement. </mark>
+
+**\*\*\*When will X break?\*\*\***
+
+- <mark> When processing demand exceeds the Pi’s CPU capacity. </mark>
+
+**\*\*\*When it breaks how will X break?\*\*\***
+
+- <mark> Output freezes and ceases to display further frames. </mark>
+
+**\*\*\*What are other properties/behaviors of X?\*\*\***
+
+- <mark> Ideally, a recording or capture feature on a portable device. </mark>
+
+**\*\*\*How does X feel?\*\*\***
+
+- <mark> This is an experimental device that considers vision, style and computation. </mark>
+
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
 <mark> The video feed is able to run relatively fluently, making it a technical possibility for this lab to include stylized video. User testing and enclosure designs are underway, as well as storyboards for an interaction film. </mark>
 
 <p align="center">
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/demo_1.gif" alt="Demo 1" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/demo_2.gif" alt="Demo 2" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/GIFs/Test_1.gif" alt="Test 1" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/GIFs/Test_2.gif" alt="Test 2" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/GIFs/Test_3.gif" alt="Test 3" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/GIFs/Test_4.gif" alt="Test 4" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/GIFs/Test_5.gif" alt="Test 5" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/GIFs/Test_6.gif" alt="Test 6" width="33%"/>
 </p>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <th align="left">Model</th>
+    <th align="left">Resolution</th>
+    <th align="left">Average FPS</th>
+    <th align="left">Style Quality</th>
+  </tr>
+  <tr>
+    <td>256-fp16-transfer</td>
+    <td>380 × 285</td>
+    <td>6–7 FPS</td>
+    <td>High</td>
+  </tr>
+  <tr>
+    <td>256-int8-transfer</td>
+    <td>380 × 285</td>
+    <td>1–2 FPS</td>
+    <td>Medium</td>
+  </tr>
+</table>
 
 <details>
 	<summary><strong>Part 2</strong></summary>
@@ -310,3 +391,112 @@ Following exploration and reflection from Part 1, finish building your interacti
 </details>
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
+
+### <mark> Camera Recording Add-On</mark>
+
+<mark> Our code can be found at [stylecam_record.py](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/style/stylecam_record.py) </mark>
+
+<mark> _**AI Usage:** Utilized assistance from ChatGPT for the writing of code._ </mark>
+
+<mark> _**Pros:** Generating the code was efficient and simple, considering that it was simply building upon the base code and adding a new feature (i.e., recording and saving a video on the Pi)._ </mark>
+
+<mark> _**Cons:** The code initially placed the generated video file at the top of the Pi directory. It did not specify this requirement when generating the code, and thus led to some confusion in locating the file when first starting out. Also, the generated file appeared to be inverted and playing at a faster rate, mainly due to the limitations of the model._ </mark>
+
+<mark> Adding on the already existing function of the camera, we decided to implement a record feature that would allow users to record what they are able to capture on the webcam through the Pi. The videos would be recorded in the same resolution as the Mini piTFT. Because the model requires a slower rate in order to process each stylized image frame, the camera needed to be slowly panned in order for it to capture a relatively stable tracking shot. This adds some frustration to its used case, and a pain point that can be further iterated with advancements to the frame rate problem. (i.e., models and hardware)</mark>
+
+<p align="center">
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/GIFs/Demo_1.1.gif" alt="Demo 1.1" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/GIFs/Demo_1.2.gif" alt="Demo 1.2" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/GIFs/Demo_1.3.gif" alt="Demo 1.3" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/GIFs/Demo_1.4.gif" alt="Demo 1.4" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/GIFs/Demo_1.5.gif" alt="Demo 1.5" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/GIFs/Demo_1.6.gif" alt="Demo 1.6" width="33%"/>
+</p>
+
+### <mark> Proof of Concept Testing</mark>
+
+- <mark> Watch Proof of Concept Testing: [Testing Video Link](https://drive.google.com/file/d/144vzqSskL6Qu3vT3IOZuoYkMDqs3gQaq/view?usp=sharing) </mark>
+
+<mark> We allowed participants from class to use the proof of concept assembly. They appreciated the customization aspect where users were able to upload their favorite artists and styles and be able to see them come alive through the Mini piTFT screen, while observing the world around them. Some input gained from the testing was to both implement a form factor to the assembly. (i.e., enclosure), and to incorporate a participatory aspect to the work (e.g., allowing multiple users to use the device to contribute to a larger database/repository of images and video that are mapped to geographic or community regions and overlay the styles chosen) </mark>
+
+<p align="center">
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Concept/Concept_1.jpg" alt="Concept 1" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Concept/Concept_2.jpg" alt="Concept 2" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Concept/Concept_3.jpg" alt="Concept 3" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Concept/Concept_4.jpg" alt="Concept 4" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Concept/Concept_5.jpg" alt="Concept 5" width="33%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Concept/Concept_6.jpg" alt="Concept 6" width="33%"/>
+</p>
+
+### <mark> Interaction Diagram & 3D Modeling </mark>
+
+<mark> Considering the interaction that we were planning, we decided to make the form factor mimic classic cameras, where the lens would appear on one side, and the screen would act as a viewfinder and be located on the otherside. This way users can be able to make an immediate mental model for the system and use it in a way that's familiar to them. All 3D models were made in Rhino and Grasshopper. </mark>
+
+![Diagram](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Sketches/Diagram.png)
+![Workspace](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Sketches/Workspace.png)
+![Technical Drawings](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Sketches/Technical_Drawings.png)
+
+### <mark> 3D Printed & Laser Cut Enclosure </mark>
+
+<mark> We incorporated both 3D printed PLA and laser cut wood for this enclosure. </mark>
+
+![Mockups 1](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Mockups/Mockup_1.jpg)
+![Mockups 2](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Mockups/Mockup_2.jpg)
+![Mockups 3](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Mockups/Mockup_3.jpg)
+![Mockups 4](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Mockups/Mockup_4.jpg)
+![Mockups 5](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Mockups/Mockup_5.jpg)
+
+### <mark> Montage Concept Film </mark>
+
+- <mark> Watch Concept Film: [Film Link](https://drive.google.com/file/d/1WP1p4zbhoKj6DwM54dAZwIpF7Rtdq-JO/view?usp=sharing) </mark>
+
+<mark> _**Synopsis:** A designer, feeling alienated and despondent from her current day-to-day life, goes on a stroll to the museum to find some sort of inspiration. She finds it in the form of an abstract painting that she falls in love with. Obsessed with the magical aura of the image, she tries to find a way to capture the essence of the painting through the use of interactive devices and computer vision algorithms._ </mark>
+
+<mark> The film is in the style of a montage movie with the series of subsequent images to denote a narrative story throughout. The film is supposed to be a design artifact, in the same way as a storyboard is to give the overarching context and emotional pain points where the use cases of this device might take place in. All content and assets used for this film are in the public domain. Music used is Lyric Pieces, Op. 54 - IV. Notturno by Edvard Grieg. </mark>
+
+![Cover](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Cover.jpg)
+![Cover](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Montage/Montage_2.jpg)
+
+<p align="center">
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Montage/Montage_3.jpg" alt="Montage 3" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Montage/Montage_4.jpg" alt="Montage 4" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Montage/Montage_5.jpg" alt="Montage 5" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Montage/Montage_6.jpg" alt="Montage 6" width="49.5%"/>
+</p>
+
+### <mark> User Testing </mark>
+
+- <mark> Watch User Testing Video #1: [User Test #1 Link](https://drive.google.com/file/d/1dWZLqXqecgF_Xpy_CwUn4EGPl5gq8Ox4/view?usp=sharing) </mark>
+
+- <mark> Watch User Testing Video #2: [User Test #2 Link](https://drive.google.com/file/d/1sNOVcUmyRJ6Uf2LxbvetQro9cyMmsJkX/view?usp=sharing) </mark>
+
+<mark> Participants were Design Tech students that were approached in studio. Both were given the opportunity to select their favorite artist and work for style transfer, giving them an element of customization to the interaction.</mark>
+
+<mark> The user testing yielded generally the same insights from the proof of concept testing, although certain features that we incorporated into the form factor proved to be not ideal. The way the viewfinder is at an incline actually prompts the user to tilt the whole device upwards to have a perpendicular view of the screen, which is not user friendly. Having the ability to take video recordings and snapshots within the same program was also an idea that was expressed from both participants. Not all styles translated to significant translation outputs. Overall, participants enjoyed getting to choose their favorite artists or art styles and viewing them through the viewfinder.</mark>
+
+![User Testing](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images//User_Testing.jpg)
+
+<mark> </mark>
+
+### <mark> Inspiration </mark>
+
+<mark> A project that is similar to our device is Bjørn Karmaann's Paragraphica, a handheld camera that converts environmental data into paragraph text, which is then fed through a transformer model and generates an image. The camera playfully utilizes a forward facing tendril design that is inspired by the blind mole, making an allusion to how the animal operates using a similar sensorial function.</mark>
+
+<mark> As stated before, the film we created took inspiration from Le Jetee, an experimental black-and-white film following a time traveling agent that is trying to reconstruct a memory from his past, and learning from a girl that exists across time. The film is a classic in film studies as it's a demonstration of the montage technique and brings into consideration how all motion films are merely just a set of still images in sequence. Even with a low frame rate (i.e., 1 every 4 seconds), meaningful narratives and ideas can still be communicated.</mark>
+
+![Le Jetee](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Paragraphica.jpg)
+
+<mark> _**Image Source:** Paragraphica, Bjørn Karmaann (2023)_ </mark>
+
+![Le Jetee](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Le_Jetee.jpg)
+
+<mark> _**Image Source:** Le Jetée (1962)_ </mark>
+
+<mark> Collaborators: Thomas Knoepffler (Cinematographer & Assembly), Carrie Wang (Diagrams & Actor), Xiaocheng Li (3D Modeling & Industrial Design), Julia Chen (Developer & Tester) </mark>
+
+<p align="center">
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Bonus_1.jpg" alt="Bonus 1" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Bonus_2.jpg" alt="Bonus 2" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Bonus_3.jpg" alt="Bonus 3" width="49.5%"/>
+	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%205/Images/Bonus_4.jpg" alt="Bonus 4" width="49.5%"/>
+</p>
