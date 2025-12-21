@@ -1,0 +1,46 @@
+ingredients:
+  - black_tea        # Pump 0
+  - green_tea        # Pump 1
+  - rooibos_tea      # Pump 2
+  - chamomile_tea    # Pump 3
+  - lemon_tea        # Pump 4
+  - sparkling_water  # Pump 5
+
+emotions:
+  - happiness
+  - sadness
+  - stress
+  - excitement
+  - calm
+  - surprise
+
+recipes:
+  happiness:
+    name: "Golden Glow"
+    description: "A cheerful blend of lemon brightness and chamomile softness."
+    ml: [10, 10, 0, 20, 40, 70]
+
+  sadness:
+    name: "Warm Quiet Tea"
+    description: "A soothing, gently grounding blend with warm rooibos depth."
+    ml: [0, 10, 25, 45, 10, 60]
+
+  stress:
+    name: "Stillness Cooler"
+    description: "A serene cooler of green tea, chamomile, and smooth rooibos."
+    ml: [5, 40, 10, 15, 5, 75]
+
+  excitement:
+    name: "Citrus Spark"
+    description: "A bright and energetic blend with citrus and rooibos warmth."
+    ml: [30, 0, 15, 0, 40, 65]
+
+  calm:
+    name: "Soft Meadow"
+    description: "A meditative, grounding tea with rooibos and chamomile harmony."
+    ml: [0, 25, 15, 45, 10, 55]
+
+  surprise:
+    name: "Crimson Twist"
+    description: "A warm, aromatic rooibos blend with a bright citrus twist and sparkling lift."
+    ml: [10, 5, 40, 10, 25, 60]
