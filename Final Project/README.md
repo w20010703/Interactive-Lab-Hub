@@ -1,6 +1,6 @@
 # Final Project: MIXI
 
-**Collaborators:** Thomas Knoepffler (Digital Fabrication & Assembly), Carrie Wang (3D Modeling & User Experience), Julia Chen (Hardware & Software Engineer)
+**Collaborators:** Thomas Knoepffler (Digital Fabrication & Assembly), Carrie Wang (3D Modeling & User Experience), Weiching (Julia) Chen (Hardware & Software Engineer)
 
 Our previous project timeline can be found in this [Google Slides Presentation](https://docs.google.com/presentation/d/15_Q3_lkcpeTdOB9RntO9GSOc6RVdMcENesf1MnFc8Mg/edit?usp=sharing)
 
