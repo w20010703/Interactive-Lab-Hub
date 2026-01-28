@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube Colors Dashboard</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 100%;
+            height: 100%;
+        }
+
+        .cell {
+            width: 100%;
+            height: 100%;
+            transition: background 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.85);
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 700px) {
+            .grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div id="cube1" class="cell">Cube 1</div>
+        <div id="cube2" class="cell">Cube 2</div>
+        <div id="cube3" class="cell">Cube 3</div>
+        <div id="blend" class="cell">Blend</div>
+    </div>
+
+    <script>
+        async function updateColors() {
+            try {
+                const res = await fetch("/colors");
+                const data = await res.json();
+                document.getElementById("cube1").style.background = `rgb(${data["1"]})`;
+                document.getElementById("cube2").style.background = `rgb(${data["2"]})`;
+                document.getElementById("cube3").style.background = `rgb(${data["3"]})`;
+                document.getElementById("blend").style.background = `rgb(${data["blend"]})`;
+            } catch (err) {
+                console.error("Error updating colors:", err);
+            }
+        }
+
+        setInterval(updateColors, 500);
+        updateColors();
+    </script>
+</body>
+
+</html>

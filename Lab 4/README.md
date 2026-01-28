@@ -1,5 +1,10 @@
 # Ph-UI!!!
 
+**Collaborators:** Thomas Knoepffler (Assembly & Developer), Carrie Wang (Drafter & Diagram Maker), Xiaocheng Li (3D Modeling), Julia Chen (Hardware & Developer), Dean Xu (AI Artist)
+
+<details>
+  <summary><strong>Original Lab Brief</strong></summary>
+
 <details>
 	<summary><strong>Instructions for Students (Click to Expand)</strong></summary>
   
@@ -13,9 +18,6 @@
 </details>
 
 ---
-
-<details>
-	<summary><strong>Lab 4 Deliverables</strong></summary>
 
 ## Lab 4 Deliverables
 
@@ -41,16 +43,11 @@
 
 ---
 
-</details>
-
 ## Lab Overview
 
-<mark> **Collaborators: Thomas Knoepffler, Carrie Wang, Xiaocheng Li Julia Chen, Dean Xu** </mark>
+**NAMES OF COLLABORATORS HERE**
 
 For lab this week, we focus both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed.
-
-<details>
-	<summary><strong>Part 1 Lab Preparation</strong></summary>
 
 ## Part 1 Lab Preparation
 
@@ -106,11 +103,6 @@ For submission, the readme.md page for this lab should be edited to include the 
 - Link your Lab 4 readme.md in your main Interactive-Lab-Hub readme.md.
 - Labs are due on Mondays, make sure to submit your Lab 4 readme.md to Canvas.
 
-</details>
-
-<details>
-	<summary><strong>Lab Overview</strong></summary>
-
 ## Lab Overview
 
 A) [Capacitive Sensing](#part-a)
@@ -145,11 +137,6 @@ F) [Record the interaction](#part-f)
    ```
    If you see "Hello blinka!", your setup is correct. If not, follow the troubleshooting steps in the file or ask for help.
 
-</details>
-
-<details>
-	<summary><strong>Part A</strong></summary>
-
 ### Part A
 
 ### Capacitive Sensing, a.k.a. Human-Twizzler Interaction
@@ -170,11 +157,6 @@ These Twizzlers are connected to pads 6 and 10. When you run the code and touch 
 Twizzler 10 touched!
 Twizzler 6 touched!
 ```
-
-</details>
-
-<details>
-	<summary><strong>Part B</strong></summary>
 
 ### Part B
 
@@ -250,46 +232,17 @@ Connect it to your pi with Qwiic connector and try running the example script to
 
 You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Proximity_Py) to learn more about the sensor and see other examples
 
-</details>
-
-<details>
-	<summary><strong>Part C</strong></summary>
-
 ### Part C
 
 ### Physical considerations for sensing
 
 Usually, sensors need to be positioned in specific locations or orientations to make them useful for their application. Now that you've tried a bunch of the sensors, pick one that you would like to use, and an application where you use the output of that sensor for an interaction. For example, you can use a distance sensor to measure someone's height if you position it overhead and get them to stand under it.
 
-</details>
-
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
-
-<mark> For this lab, we decided to begin our ideation by considering different kinds of a type of general-purpose game controller. We start off with an open design space, considering a generalized 2D game. Think of classic cell phone games that would be based off a grid of pixels. At a minimum, this controller would have up, down, left, and right controls. </mark>
-
-<p align="center">
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Sketches/Interaction_Image_1.png" alt="Interaction Image 1" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Sketches/Interaction_Image_2.png" alt="Interaction Image 2" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Sketches/Interaction_Image_4.png" alt="Interaction Image 4" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Sketches/Interaction_Image_5.png" alt="Interaction Image 5" width="49.5%"/>
-</p>
-
-![Interaction Image 3](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Sketches/Interaction_Image_3.png)
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
-<mark> As we decided to narrow down our ideas further, we found that having a specific kind of game made the design of our interaction far more deliberate and filled with intention, so we decided to select the game Snake as a preliminary game to design our controller off of. The classic Snake made use of up, down, left, and right controls. Furthermore, the game relied on timing and precision in order for a player to navigate the winding path that the snake creates. Because of this, we wanted to think about how we might be able to place a directional pad or some other form of directional movement analog, in a way that is both playful but also takes into account the affordance of instant control over the snake character. </mark>
-
 **\*\*\*Pick one of these designs to prototype.\*\*\***
-
-- <mark> Watch Snake Prototype Interaction: [Snake Prototype Video Link](https://drive.google.com/file/d/142wi6-xxkbrqjmAFBEKmk51IIl9u3vvh/view?usp=sharing) </mark>
-
-<mark> We created a very simple prototype utilizing a row of four tactile switches to denote each direction and coded a very simple prototype of the Snake game through the Raspberry Pi. While this set up was simple, we wanted to expand the control aspect further and started to take inspiration directly from the snake character itself for our physical housing and control enclosure.</mark>
-
-![Electronics Setup](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Electronics_Setup.png)
-
-<details>
-	<summary><strong>Part D</strong></summary>
 
 ### Part D
 
@@ -327,63 +280,23 @@ Here is an example:
 
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
 
-</details>
-
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
-
-<mark> We decided to incorporate another theme for this section, creating enclosures and controllers that mimic the characters within classic 2D games (e.g., utilizing an actual racket for the game of pong, or having two separate sticks that would represent oars for a rowing game). For our main example of this lab, the controller for the classic snake game would be a long, snake-like object that would control the snake character, depending on which direction the player would bend the object. We started to consider how this large form would break down into its simple, modular parts. </mark>
-
-<p align="center">
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Sketches/Form_Image_2.png" alt="Form Image 2" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Sketches/Form_Image_3.png" alt="Form Image 3" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Sketches/Form_Image_4.png" alt="Form Image 4" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Sketches/Form_Image_5.png" alt="Form Image 5" width="49.5%"/>
-</p>
-
-![Form Image 1](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Sketches/Form_Image_1.png)
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
-<mark> While these controllers vary significantly in terms of their actuation and use case (i.e., specific game they are designed for), a few similarities arise. For one, they all deal with certain objects that are already indicative of normal human interaction (i.e. rackets, oars, etc.) or are familiar objects that are supposedly mapping onto a character in the game. Therefore, they make use of the mental model approach for physicalization, whereby phsyical objects that mimic digital assets give the impression of control over those assets. The question still remains if these mental models will be sufficient enough for people to understand how to play each game utilizing the control controller. That would open the door for user testing. </mark>
-
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
 
-<mark> We decided to take inspiration from the actual skeleton of a snake and consider its individual vertebrae as an underlying scaffolding for our controller. In the same way the vertebrae can bend and undulate in on themselves, so too would our controller. Through its undulations, the succeeding vertebrae would then click on ubiquitiously placed buttons on the preceding vertebrae, thus creating a type of controller that is activated through its bending. </mark>
-
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
-
-- <mark> We wanted it to be unit based, so we created a general purpose, laser cut module in Rhino 3D that we would repeat over and over again across the assembly attached together by a string (i.e., beads on a string).</mark>
-- <mark> Spaces and cavities need to be included so that the electronics and wiring could be able to pass through the assembly, in addition to being able to attach buttons onto the sides of each vertebrae section.</mark>
-- <mark> The final assembly needs to be robust enough for it to hold together and be held by a user in both hands, but also flexible enough for it to be able to bend and undulate properly (i.e. press side buttons).</mark>
-
-![Spine Unit](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Spine_Unit.png)
-
-<p align="center">
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Cardboard_Assembly_1.jpg" alt="Cardboard Assembly 1" width="33%"/>
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Cardboard_Assembly_2.jpg" alt="Cardboard Assembly 2" width="33%"/>
-    <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Cardboard_Assembly_3.jpg" alt="Cardboard Assembly 3" width="33%"/>
-</p>
 
 Build a cardboard prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
-
-- <mark> Watch Snake Cardboard: [Snake Cardboard Video Link](https://drive.google.com/file/d/1WxEIpw7CQwIu8CiWmukowEdy7hOVrlXo/view?usp=sharing) </mark>
-
-<mark> Unfortunately, our cardboard prototype, as it stands, was not sufficient enough to create an undulating motion through movement at the top of the assembly. Our current prototype needs to provide some tensile strength in between each cardboard vertebrae as well. This can possibly be achieved by including some crimps or knots in between each vertebrae or by increasing the tension of the rope at each end to create a more tense structure that's able to naturally orient itself to its original straight position whenver the user bends it. More electronics integration and iterations on this prototype are yet to come. </mark>
-
-![Cardbaord Prototype 1](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Cardbaord_Prototype_1.jpg)
-![Cardbaord Prototype 2](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Cardbaord_Prototype_2.jpg)
-![Cardbaord Prototype 3](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Cardbaord_Prototype_3.jpg)
 
 # LAB PART 2
 
 ### Part 2
 
 Following exploration and reflection from Part 1, complete the "looks like," "works like" and "acts like" prototypes for your design, reiterated below.
-
-<details>
-	<summary><strong>Part E</strong></summary>
 
 ### Part E
 
@@ -560,119 +473,7 @@ python pi_servo_hat_test.py
 For more details and advanced usage, see the [official SparkFun Servo pHAT documentation](https://learn.sparkfun.com/tutorials/pi-servo-phat-v2-hookup-guide/all#resources-and-going-further).
 A servo motor is a rotary actuator that allows for precise control of angular position. The position is set by the width of an electrical pulse (PWM). You can read [this Adafruit guide](https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/servo-motors) to learn more about how servos work.
 
-</details>
-
-### <mark> Proof of Concept Testing (Acts Like)</mark>
-
-<mark> Building on what we did in part one, we attempted to test a proof of concept (i.e., act likes prototpye) from our first cardboard controller. We had people use it like a real controller, imagining they were controlling the snake game on a grid using the cardboard pieces. The results were mixed - some liked how flexible it was, while others wanted it to be stiffer. Also, the cardboard pieces slid around on a larger delta depending on how long the string was. So, when we were putting it together, we’d need to add some kind of netting to keep them in place. People also wanted a handle or base to hold the controller, not just holding the bottom. </mark>
-
-<p align="center">
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Testing_1.jpg" alt="Testing 1" width="33%"/>
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Testing_2.jpg" alt="Testing 2" width="33%"/>
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Testing_3.jpg" alt="Testing 3" width="33%"/>
-</p>
-
-### <mark> Assembly Process </mark>
-
-<mark> We went ahead and built the assembly process, just like we did with the first prototype. We used a laser cutter to cut out different cardboard modules and tied them together with a long string. This time, the units were smaller than the first ones, and they’d be longer accounting for a thinner frame. That way, we could place more layers on top of the assembly (i.e., netting, cotton, fabric, etc.). </mark>
-
-- <mark> Cardboard </mark>
-- <mark> Hot Glue </mark>
-- <mark> Fishing Line </mark>
-- <mark> Can Tabs </mark>
-
-<p align="center">
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Process_1.jpg" alt="Process 1" width="49.5%"/>
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Process_2.jpg" alt="Process 2" width="49.5%"/>
-</p>
-
-### <mark> Assembled Cardboard Prototype (Works Like)</mark>
-
-- <mark> Watch Prototype Demo: [Prototype Demo Video Link](https://drive.google.com/file/d/1Zw3ZRs7lFbPT-bHTRCJ872ctvcM4Htz3/view?usp=sharing) </mark>
-
-<mark> Our code can be found at [snake_game.py](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/snake_game.py) </mark>
-
-<mark> _**AI Usage:** Utilized assistance from ChatGPT for the writing of code._ </mark>
-
-<mark> _**Pros:** because the snake game is very ubiquitous and a common coding project, ChatGPT was able to produce a very simple boiler plate example with minimal reprompting. Adding variety to the system also was pretty simple as again the game was rather rudimentary and so it could be generally padded upon through further iterations_ </mark>
-
-<mark> _**Cons:** Less so about the context of the project and more so about the limitations of ChatGPT model 5-o. This model has a new cork where it continually asks for questions and specificity on what your coding. To some extent, it's useful to make sure that the LLM is not making assumptions about your code, but at some point, it becomes rather annoying and a hindrance to efficiency. Asking for specificity on the color of the graphics, the speed of the game, and even each stage of the interaction becomes tedious. ._ </mark>
-
-<mark> The assembled cardboard prototype (i.e., works like prototype) used the pHAT module to connect a qwiic connect joystick and a qwiic connect IMU. The joystick was placed in the middle of the assembly, giving the user control at that point. The IMU was also attached to that point. We coded a simple snake game using pyGame. The game can only be played through the Pi desktop GUI interface, so to run it, you’d need VNC Viewer to access the Pi’s desktop view and then open the game from there. </mark>
-
-- <mark> Raspberry Pi 5 Model B/8GB </mark>
-- <mark> SparkFun Servo pHAT for Raspberry Pi </mark>
-- <mark> SparkFun Qwiic Joystick </mark>
-- <mark> Adafruit 6-DoF Accel + Gyro IMU LSM6DS3TR-C </mark>
-- <mark> SparkFun Qwiic Cables </mark>
-
-<p align="center">
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Electronic_Assmbly.jpg" alt="Electronics Assembly" width="49.5%"/>
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Prototype_1.jpg" alt="Prototype 1" width="49.5%"/>
-</p>
-
-![Game](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Game.jpg)
-![Diagram](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Diagram.png)
-
-### <mark> Material Considerations </mark>
-
-<mark> For the final assembly, we decided to add cotton between each vertebrae. This way, the structure becomes more rigid and won’t move as freely as it did before. The entire assembly is still bendable, but it’s now extra cushioned with the cotton in between. To add more comfort and make the controller more friendly, we used stretchable fabric from the MakerLAB to sew up a soft enclosure. We cut up a long piece and sewed it together into a long sock-like form to fit the entire cardboard assembly. To keep our Pi situated on the soft plushie, we also added a small pocket to the fabric. </mark>
-
-- <mark> Cotton </mark>
-- <mark> Strechable Fabric </mark>
-- <mark> White Thread </mark>
-
-<p align="center">
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Material.jpg" alt="Material" width="49.5%"/>
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Prototype_2.jpg" alt="Prototype 2" width="49.5%"/>
-</p>
-
-### <mark> Soft Fabric Assembly (Looks Like)</mark>
-
-- <mark> Watch Final Demo: [Final Demo Video Link](https://drive.google.com/file/d/17ZNER6o5YLFKbsqBvnKmQoCuWHXabhU-/view?usp=sharing) </mark>
-
-- <mark> Watch Main Demo #1: [Main Demo #1 Video Link](https://drive.google.com/file/d/1dNQwNVdSI0GpUGP5p9YgzXNE7DYe0lLX/view?usp=sharing) </mark>
-
-- <mark> Watch Main Demo #2: [Main Demo #2 Video Link](https://drive.google.com/file/d/11Mwo4mAzDu4nhNeh_0bPuaMpPGzNFSVu/view?usp=sharing) </mark>
-
-<mark> After testing the soft fabric assembly (i.e., looks like prototype) with users, we got some feedback that’s worth keeping in mind for future versions. First, while the soft cotton made the plushie somewhat comfortable, the cardboard inside doesn’t feel as soft as we’d hoped. It’s also hard to tell where exactly to bend the plushy to control the snake. We should make it clear where each direction is mapped to each bend in the future by adding some sort of sign or signifier for the user. Second, the game is simple, but it’s too fast for most people to keep up with. We should make it slower so that users can respond more easily. The original version had a death penalty for touching the edges of the screen, but that’s too harsh. Lastly, the plushie, while cute, could benefit from more snake-like design choices such as the inclusion of scales or different colors (i.e., green, black, yellow, etc.). </mark>
-
-![Mockup 1](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Mockup_1.jpg)
-![Mockup 2](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Mockup_2.jpg)
-![Mockup 3](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Mockup_3.jpg)
-![Mockup 4](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Mockup_4.jpg)
-![Mockup 5](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Mockup_5.jpg)
-
-### <mark> AI Product Mockups</mark>
-
-<mark> As an added bonus, we came up with AI mockups to visualize this assembly as a product. </mark>
-
-<p align="center">
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/AI_Mockup_1.jpg" alt="AI Mockup 1" width="33%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/AI_Mockup_2.jpg" alt="AI Mockup 2" width="33%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/AI_Mockup_3.jpg" alt="AI Mockup 3" width="33%"/>
-</p>
-
-<mark> _**AI Usage:** Mockups generated using Google (Gemini) and OpenAI. All original artifacts preserved._ </mark>
-
-<details>
-
-  <summary><mark><strong>Original Prompt(s)</strong></mark></summary>
-
-  <br>
-
-<mark> _"The box features an off-white rectangular box with a streamlined "S"-shaped cutout window in the center. Through the window, you can see the soft, gray, snake-shaped handle inside, cleverly secured so that it appears to "swim" within the box. The brand logo is featured at the top, and the slogan is displayed below. The sides of the box feature our cute illustrations for racing, flying, and snake games, creating a simple yet dynamic feel."_ </mark>
-
-<mark> _"Advertisement for a soft, plushie, fabric-based snake game controller. The controller is held vertically by two hands with a clear height difference: the left hand is positioned higher, and the right hand is positioned lower. Both hands naturally grip the snake body, creating a "weapon-like" vertical hold, aimed upwards. The snake controller is a single, long serpentine body, with only one head at the very top. The bottom end tapers into a natural snake tail. The snake has a soft, light grey fabric texture, with subtle segmentation/texture to represent its joints/body. The snake's head is cute and friendly, with small black eyes and a pink, forked tongue sticking out. The background is a vibrant, stylized sky, featuring fluffy white clouds, streaks of golden light (like sun rays or flight trails), and a bright, ethereal light source at the top center. The overall aesthetic is soft, playful, and adventurous. Below the image, the main headline is "Bend the rules." in a clean, modern white font. Below that, in a smaller white font, is the sub-headline "Soar. Shaped by you."_ </mark>
-
-<mark> _"Dynamic and abstract game concept art for a stylized racing game. The perspective is a first-person driver's point-of-view, rushing down an abstract race track made of glowing neon light. The track twists and turns into a distant horizon, creating an immense sense of speed through motion blur and long-exposure light trails. The color palette is vibrant, with bright cyan, magenta, and orange light against a dark, clean background. The art style is energetic, futuristic, and minimalist, focusing purely on the feeling of speed and flow. Do not include any car, cockpit, UI elements, text, hands, or game controllers."_ </mark>
-
-</details>
-
 ---
-
-<details>
-	<summary><strong>Part F</strong></summary>
 
 ### Part F
 
@@ -686,22 +487,135 @@ Document all the prototypes and iterations you have designed and worked on! Agai
 
 </details>
 
-### <mark> Inspiration </mark>
+## Overview
 
-<mark> As stated before, our design process was inspired by mimicking the bone structure of a snake itself, considering that we were utilizing the snake game as a basis for how we were going to design our controller. By mimicking each vertebrae on the spine, we were able to use a bottom of approach to design and create an abstract system that allows us to use each single node of the controller in a playful way. </mark>
+We designed a physical controller for the classic Snake game that takes direct inspiration from the snake itself. The controller is a long, flexible, snake-like object whose bends control the snake on screen. Bending the body in four cardinal directions presses internal buttons or triggers sensors, giving directional input. The form mimics a snake’s vertebrae—modular segments connected by string that allow undulation while remaining robust enough to hold in two hands.
 
-![Inspiration 3](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Inspiration/Inspiration_3.jpg)
-![Inspiration 4](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Inspiration/Inspiration_4.jpg)
+The project explores how mental models from familiar objects (rackets for Pong, oars for rowing) can translate into playful, embodied control. By literally shaping the controller like the on-screen character, we aimed for intuitive, physical mapping while keeping the interaction fun and surprising.
 
-<mark> _**Image Source:** Close up head and body bones viper on black background. (Adobe Stock Cornell License)_ </mark>
+_AI Usage:_ ChatGPT for code generation; Google Gemini and OpenAI for product mockups.
 
-<p align="center">
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Inspiration/Inspiration_1.png" alt="Inspiration 1" width="49.5%"/>
-	<img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Inspiration/Inspiration_2.png" alt="Inspiration 2" width="49.5%"/>
-</p>
+## Ideation & Sensing Sketches
 
-<mark> _**Image Source:** Snake game. Nokia phone. (www.digitalartsblog.com)_ </mark>
+For this lab, we decided to begin our ideation by considering different kinds of a type of general-purpose game controller. We start off with an open design space, considering a generalized 2D game. Think of classic cell phone games that would be based off a grid of pixels. At a minimum, this controller would have up, down, left, and right controls.
 
-<mark> Collaborators: Thomas Knoepffler (Assembly & Developer), Carrie Wang (Drafter & Diagram Maker), Xiaocheng Li (3D Modeling), Julia Chen (Hardware & Developer), Dean Xu (AI Artist) </mark>
+![Interaction Image 1](assets/interaction1_sketch.png)
+![Interaction Image 2](assets/interaction2_sketch.png)
 
-![Bonus](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/Images/Bonus.jpg)
+As we decided to narrow down our ideas further, we found that having a specific kind of game made the design of our interaction far more deliberate and filled with intention, so we decided to select the game Snake as a preliminary game to design our controller off of. The classic Snake made use of up, down, left, and right controls. Furthermore, the game relied on timing and precision in order for a player to navigate the winding path that the snake creates. Because of this, we wanted to think about how we might be able to place a directional pad or some other form of directional movement analog, in a way that is both playful but also takes into account the affordance of instant control over the snake character.
+
+![Electronics Setup](assets/electronics.png)
+
+## Display & Housing Sketches
+
+We decided to incorporate another theme for this section, creating enclosures and controllers that mimic the characters within classic 2D games (e.g., utilizing an actual racket for the game of pong, or having two separate sticks that would represent oars for a rowing game). For our main example of this lab, the controller for the classic snake game would be a long, snake-like object that would control the snake character, depending on which direction the player would bend the object. We started to consider how this large form would break down into its simple, modular parts.
+
+![Form Image 1](assets/form1_sketch.png)
+![Form Image 2](assets/form2_sketch.png)
+
+We decided to take inspiration from the actual skeleton of a snake and consider its individual vertebrae as an underlying scaffolding for our controller. In the same way the vertebrae can bend and undulate in on themselves, so too would our controller. Through its undulations, the succeeding vertebrae would then click on ubiquitiously placed buttons on the preceding vertebrae, thus creating a type of controller that is activated through its bending.
+
+We wanted it to be unit based, so we created a general purpose, laser cut module in Rhino 3D that we would repeat over and over again across the assembly attached together by a string (i.e., beads on a string). Spaces and cavities need to be included so that the electronics and wiring could be able to pass through the assembly, in addition to being able to attach buttons onto the sides of each vertebrae section. The final assembly needs to be robust enough for it to hold together and be held by a user in both hands, but also flexible enough for it to be able to bend and undulate properly (i.e. press side buttons).
+
+![Spine Unit](assets/spine_unit.png)
+![Cardboard Assembly](assets/cardboard_assembly.png)
+![Cardboard Prototype 1](assets/cardboard1_prototype.png)
+![Cardboard Prototype 2](assets/cardboard2_prototype.png)
+![Cardboard Prototype 3](assets/cardboard3_prototype.png)
+
+[![Snake Cardboard Thumbnail](assets/cardboard_thumb.png)](https://youtu.be/8EBTSw1zsnI)  
+[Watch Snake Cardboard on YouTube](https://youtu.be/8EBTSw1zsnI)
+
+Unfortunately, our cardboard prototype, as it stands, was not sufficient enough to create an undulating motion through movement at the top of the assembly. Our current prototype needs to provide some tensile strength in between each cardboard vertebrae as well. This can possibly be achieved by including some crimps or knots in between each vertebrae or by increasing the tension of the rope at each end to create a more tense structure that's able to naturally orient itself to its original straight position whenver the user bends it. More electronics integration and iterations on this prototype are yet to come.
+
+## Part 2 – Final Prototypes
+
+### Proof of Concept Testing (Acts Like)
+
+Building on what we did in part one, we attempted to test a proof of concept (i.e., act likes prototype) from our first cardboard controller. We had people use it like a real controller, imagining they were controlling the snake game on a grid using the cardboard pieces. The results were mixed - some liked how flexible it was, while others wanted it to be stiffer. Also, the cardboard pieces slid around on a larger delta depending on how long the string was. So, when we were putting it together, we’d need to add some kind of netting to keep them in place. People also wanted a handle or base to hold the controller, not just holding the bottom.
+
+![Testing](assets/testing.png)
+
+### Assembly Process
+
+We went ahead and built the assembly, just like we did with the first prototype. We used a laser cutter to cut out different cardboard modules and tied them together with a long string. This time, the units were smaller than the first ones, and they’d be longer accounting for a thinner frame. That way, we could place more layers on top of the assembly (i.e., netting, cotton, fabric, etc.).
+
+- Cardboard
+- Hot Glue
+- Fishing Line
+- Can Tabs
+
+![Process 1](assets/process1.png)
+![Process 2](assets/process2.png)
+
+### Assembled Cardboard Prototype (Works Like)
+
+[![Prototype Demo Thumbnail](assets/proto_demo_thumb.png)](https://youtu.be/bk8eQdtZXL4)  
+[Watch Prototype Demo on YouTube](https://youtu.be/bk8eQdtZXL4)
+
+Our code can be found at [snake_game.py](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%204/snake_game.py)
+
+_AI Usage:_ Utilized assistance from ChatGPT for the writing of code.
+
+_Pros:_ Because the snake game is very ubiquitous and a common coding project, ChatGPT was able to produce a very simple boiler plate example with minimal reprompting. Adding variety to the system also was pretty simple as again the game was rather rudimentary and so it could be generally padded upon through further iterations.
+
+_Cons:_ Less so about the context of the project and more so about the limitations of ChatGPT model 5-o. This model has a new bug where it continually asks for questions and specificity on what your coding. To some extent, it's useful to make sure that the LLM is not making assumptions about your code, but at some point, it becomes rather annoying and a hindrance to efficiency. Asking for specificity on the color of the graphics, the speed of the game, and even each stage of the interaction becomes tedious.
+
+The assembled cardboard prototype (i.e., works like prototype) used the pHAT module to connect a qwiic connect joystick and a qwiic connect IMU. The joystick was placed in the middle of the assembly, giving the user control at that point. The IMU was also attached to that point. We coded a simple snake game using pyGame. The game can only be played through the Pi desktop GUI interface, so to run it, you’d need VNC Viewer to access the Pi’s desktop view and then open the game from there.
+
+- Raspberry Pi 5 Model B/8GB
+- SparkFun Servo pHAT for Raspberry Pi
+- SparkFun Qwiic Joystick
+- Adafruit 6-DoF Accel + Gyro IMU LSM6DS3TR-C
+- SparkFun Qwiic Cables
+
+![Diagram](assets/diagram.png)
+![Game](assets/game.png)
+![Electronic Assembly](assets/electronic_assembly.png)
+![Prototype](assets/prototype.png)
+
+### Material Considerations
+
+For the final assembly, we decided to add cotton between each vertebrae. This way, the structure becomes more rigid and won’t move as freely as it did before. The entire assembly is still bendable, but it’s now extra cushioned with the cotton in between. To add more comfort and make the controller more friendly, we used stretchable fabric from the MakerLAB to sew up a soft enclosure. We cut up a long piece and sewed it together into a long sock-like form to fit the entire cardboard assembly. To keep our Pi situated on the soft plushie, we also added a small pocket to the fabric.
+
+- Cotton
+- Stretchable Fabric
+- White Thread
+
+![Material](assets/material.png)
+![Cotton](assets/cotton.png)
+
+### Soft Fabric Assembly (Looks Like)
+
+[![Main Demo #1 Thumbnail](assets/main_demo1_thumb.png)](https://youtu.be/0_0Am5ub7nc)  
+[Watch Main Demo #1 on YouTube](https://youtu.be/0_0Am5ub7nc)
+
+[![Main Demo #2 Thumbnail](assets/main_demo2_thumb.png)](https://youtu.be/qnWo3dm69Zw)  
+[Watch Main Demo #2 on YouTube](https://youtu.be/qnWo3dm69Zw)
+
+[![Main Demo #3 Thumbnail](assets/main_demo3_thumb.png)](https://youtu.be/9HQaPcGT6h8)  
+[Watch Main Demo #3 on YouTube](https://youtu.be/9HQaPcGT6h8)
+
+After testing the soft fabric assembly (i.e., looks like prototype) with users, we got some feedback that’s worth keeping in mind for future versions. First, while the soft cotton made the plushie somewhat comfortable, the cardboard inside doesn’t feel as soft as we’d hoped. It’s also hard to tell where exactly to bend the plushy to control the snake. We should make it clear where each direction is mapped to each bend in the future by adding some sort of sign or signifier for the user. Second, the game is simple, but it’s too fast for most people to keep up with. We should make it slower so that users can respond more easily. The original version had a death penalty for touching the edges of the screen, but that’s too harsh. Lastly, the plushie, while cute, could benefit from more snake-like design choices such as the inclusion of scales or different colors (i.e., green, black, yellow, etc.).
+
+![Mockup 1](assets/view1.png)
+![Mockup 2](assets/view2.png)
+![Mockup 3](assets/view3.png)
+
+### AI Product Mockups
+
+As an added bonus, we came up with AI mockups to visualize this assembly as a product.
+
+![AI Mockup](assets/ai_mockup.png)
+
+_AI Usage:_ Mockups generated using Google (Gemini) and OpenAI. All original artifacts preserved.
+
+## Inspiration
+
+As stated before, our design process was inspired by mimicking the bone structure of a snake itself, considering that we were utilizing the snake game as a basis for how we were going to design our controller. By mimicking each vertebrae on the spine, we were able to use a bottom of approach to design and create an abstract system that allows us to use each single node of the controller in a playful way.
+
+![Inspiration 1](assets/insp.png)
+
+## Reflections
+
+The embodied mapping felt intuitive once users understood the concept, but discoverability remains the biggest challenge—people need clear cues about where and how hard to bend. The plush version softened the experience literally and figuratively, but internal rigidity still needs work. Slowing the game and softening consequences made play more forgiving and prolonged engagement. Overall the project showed how deeply physical form can shape interaction when the controller literally becomes the character.
