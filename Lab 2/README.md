@@ -188,25 +188,23 @@ Pro Tip: Using tools like [code-server](https://coder.com/docs/code-server/lates
 
 ## Part F. Now moved to Lab2 Part 2.
 
-## Part G. 
+## Part G.
+
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
-<img width="1536" height="1152" alt="IMG_9898" src="https://github.com/user-attachments/assets/90b25f2f-4ef0-4b3d-8a72-365b66616927" />
-
-
 
 # Prep for Part 2
 
 1. Pick up remaining parts for kit on Thursday lab class. Check the updated [parts list inventory](partslist.md) and let the TA know if there is any part missing.
-  
 
 2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
 
 # Lab 2 Part 2
 
 ## Assignment that was formerly Lab 2 Part E.
+
 ### Modify the barebones clock to make it your own
 
-Does time have to be linear?  How do you measure a year? [In daylights? In midnights? In cups of coffee?](https://www.youtube.com/watch?v=wsj15wPpjLY)
+Does time have to be linear? How do you measure a year? [In daylights? In midnights? In cups of coffee?](https://www.youtube.com/watch?v=wsj15wPpjLY)
 
 Can you make time interactive? You can look in `screen_test.py` for examples for how to use the buttons.
 
@@ -214,67 +212,13 @@ Please sketch/diagram your clock idea. (Try using a [Verplank diagram](https://c
 
 **We strongly discourage and will reject the results of literal digital or analog clock display.**
 
-Group Work (Thomas Knoepffler, Carrie Wang, Xiaocheng Li Julia Chen, Dean Xu)
-
-For the next part of this lab, our team came together to conceptualize a kind of clock that we could collectively work on. We came together with our initial ideas and deliberated on common themes that resonated with eachother. We decided to go with an idea we were ideating upon in last semester's Design for Physical Interaction class in Ithaca, an alarm clock that pours water on the user's head when it is time to wake up. The device would be a playful frustration for user's morning routine, adding a comedic schadenfreude to begrudgingness that is present in most traditional alarm clocks.
-
-[storyboard.pdf](https://github.com/user-attachments/files/22457300/storyboard.pdf)
-
-![Storyboard_2](https://github.com/user-attachments/assets/78dab047-ade0-4683-8e59-0154fd1dcefb) ![Storyboard_3](https://github.com/user-attachments/assets/355ec6a5-baca-43d6-9ff6-00c8d607bcd4)
-
-AI Usage: Realistic storyboard set generated using Google (Gemini). All original artifacts preserved.
-
-Original Prompt: "Please design product renderings for a water-based alarm clock. The alarm clock's base should be a clear water tank with a digital time display. The robotic arm of the alarm clock should have a nozzle at its end, capable of extending over the bed to aim at a sleeping person's face. Ensure the bedside table is flush with the bed, and a plant is placed on the bedside table. For the second consecutive story image, please show the alarm clock display reading 'Wake Up' with a water droplet icon, while the nozzle gently mists a small amount of water onto a naturally waking person with slightly opened eyes."
-
-We utilized both the MiniPiTFT to display a short 10 second count down followed by a "WAKE UP!!!" message on the screen, and a small Stepper Motor that would hold a cup of water and pour it at the end of the countdown. This required a careful use of the multi-threading functions so as to not overlap protocols with one another, but still allow the user to have various controls. We also needed to change our initial pin setup, eventually using a pin extender add-on that would let us use shared pins. A 3D printed platform was made to hold the electronics assembly and a cardboard enclosure was created to house the wires. The clock was then decorated with office decor to make more appropriate for a domestic setting.
-
-
-<p align="center">
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/Images/Assembly_1.jpg" alt="Assembly 1" width="333"/>
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/Images/Assembly_2.jpg" alt="Assembly 2" width="333"/>
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/Images/Assembly_3.jpg" alt="Assembly 3" width="333"/>
-</p>
-
-<p align="center">
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/Images/Assembly_4.jpg" alt="Assembly 1" width="333"/>
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/Images/Assembly_5.jpg" alt="Assembly 2" width="333"/>
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/Images/Assembly_6.jpg" alt="Assembly 3" width="333"/>
-</p>
-
-<p align="center">
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/Images/Internals_1.jpg" alt="Internals 1" width="333"/>
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/Images/Internals_2.jpg" alt="Internals 2" width="333"/>
-  <img src="https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/Images/Internals_3.jpg" alt="Internals 3" width="333"/>
-</p>
-
-<mark> The device was situated to hang over a shelf or other elevation above a bed. The display showcasing the moment of waterfall. A secondary function had to be incorporated onto the other button on the MiniPiTFTF to adjust the Stepper Motor to be in the correct position. In hindsight, this is a limitation of the Stepper Motor where it cannot be precise in the angle positioning, rather it can only to take a set of steps towards a particular direction. In a future implementation, it would be ideal to use a Servo Motor instead. The demostration showed that the device worked in concept, although considering the anticipation and depending on the sleeping position, the moment of waterfall can be a little...unexpected. </mark>
-
-![View 1](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/Images/View_1.jpg)
-![View 2](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/Images/View_2.jpg)
-![View 3](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/Images/View_3.jpg)
-
-
 \*\*\***A copy of your code should be in your Lab 2 Github repo.**\*\*\*
-[Code](https://github.com/w20010703/Interactive-Lab-Hub/edit/Fall2025/Lab%202/water_alarm_clock.py)
 
-<mark> _**AI Usage:** Utilized assistance from ChatGPT for the writing of code._ </mark>
+## Assignment that was formerly Part F.
 
-<mark> _**Pros:** The code was very quick to generate and was pretty adaptive to the broader context of the task. ChatGPT is very adept at remembering context for extended converations and can call-back to various instances to revise earleir versions of the genrerated code, which was ideal for building upon both the Stepper Motor and the MiniPiTFT functionality._ </mark>
-
-<mark> _**Cons:** Often times, ChatGPT can often get stuck in a suggestion loop (i.e., suggesting code changes that already have been proposed but have no effect). The biggest limitation was the fact that it is very myopic when it comes to hardware issues. After deugging the code extensivley, we found the main issue to be hardware related (e.g., a change in wire setup) which was something that ChatGPT could not pick up on._ </mark>
-
-## Assignment that was formerly Part F. 
 ## Make a short video of your modified barebones PiClock
 
-
-
-### <mark> Clock Demonstration Videos </mark>
-
-- <mark> Watch the Edited Clock Demo here: [Clock Demo Video Link](https://drive.google.com/file/d/1GaLF-cMeAsRe4Ozz_S4jAlc_2EeO_2xp/view?usp=sharing) </mark>
-
-- <mark> Watch the Unedited Clock Video 1 here: [Clock Unedited 1 Video Link](https://drive.google.com/file/d/10chgjFNB8tFSNr2_Ddpjtch2ASdxsr6L/view?usp=sharing) </mark>
-
-- <mark> Watch the Unedited Clock Video 2 here: [Clock Unedited 2 Video Link](https://drive.google.com/file/d/14ocHxTv_eLegoDM1LgB9Ggoroa1MLGL-/view?usp=sharing) </mark>
+\*\*\***Take a video of your PiClock.**\*\*\*
 
 After you edit and work on the scripts for Lab 2, the files should be upload back to your own GitHub repo! You can push to your personal github repo by adding the files here, commiting and pushing.
 
@@ -292,18 +236,84 @@ Modify the code from last week's lab to make a new visual interface for your new
 
 As always, make sure you document contributions and ideas from others explicitly in your writeup.
 
-<mark> One other work that inspired us for this lab was the wearable art of Kathleen McDermott. Specifically Urban Armor #9, a harness that slaps the wearers face at 5:00pm to signal the end of the work day. Our work hopes to explore a similar design space, namley a satirical play on human interfacing objects and their relationship to ourselves and time. </mark>
-
-![Inspiration 4](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/Proccess/Inspiration_4.jpg)
-
-<mark> _**Image Source:** Kathleen McDermott, Urban Armor #9 (2019)._ </mark>
-
-<mark> Collaborators: Thomas Knoepffler (Hardware & Assembly), Carrie Wang (Storyboards & Editor), Xiaocheng Li (3D Modeling), Julia Chen (Developer & Debugger), Dean Xu (AI Artist) </mark>
-
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page.
 
-- <mark> Watch the Behind the Scenes Video 1 here: [Behind the Scenes 1 Video Link](https://drive.google.com/file/d/1b21GkXEWpixatx5N_U9vCuk-lmLI_eCU/view?usp=sharing) </mark>
+</details>
 
-- <mark> Watch the Behind the Scenes Video 2 here: [Behind the Scenes 2 Video Link](https://drive.google.com/file/d/1LTpdXPyYD4rvL5D3Sy68XP0bnh-fDJyK/view?usp=sharing) </mark>
+## Overview
 
+Our group built a playfully frustrating alarm clock that pours water on the sleeper’s head when it’s time to wake up. The idea revisits a concept we started exploring last semester in Ithaca—turning the usual resentment toward alarm clocks into deliberate comedic schadenfreude. A 10-second countdown appears on the MiniPiTFT, followed by “WAKE UP!!!” and the stepper motor tipping a cup of water. The device hangs above the bed on a shelf; one button starts the alarm, the other lets you reposition the motor arm before countdown.
 
+Individual inspiration came from Tega Brain’s work on non-human temporalities and “eccentric engineering” that subverts anthropocentric systems. Early personal sketches explored bird migration clocks and subway-interval timers, but the group converged on the water-pouring alarm for its satirical take on human-object relationships and time.
+
+_AI Usage:_ Google Gemini generated realistic storyboard renderings; ChatGPT assisted with code writing and debugging.
+
+## Ideation & Individual Brainstorm
+
+My initial sketches played with alternative timekeeping: one tracking bird migration patterns, another marking discrete intervals between F-line subway stops.
+
+![Brainstorm 1](assets/brainstorm1.png)
+![Brainstorm 2](assets/brainstorm2.png)
+
+## Group Concept & Storyboards
+
+We pooled ideas and landed on the water-pouring alarm clock—equal parts provocation and morning theater.
+
+![Storyboard 1](assets/storyboard1.png)
+![Storyboard 2](assets/storyboard2.png)
+
+_AI Usage:_ Realistic storyboard set generated using Google Gemini. All original artifacts preserved.
+
+_Original Prompt:_ "Please design product renderings for a water-based alarm clock..."
+
+## Prototyping & Assembly
+
+We used the MiniPiTFT for countdown and messaging, paired with a stepper motor holding a small cup of water. Multi-threading kept display and motor control independent. Initial pin conflicts required a pin-extender add-on. A 3D-printed platform held the electronics; cardboard enclosure hid wiring and was decorated for domestic camouflage. The device hangs above the bed. One button repositions the stepper arm (a limitation of steppers—only directional steps, no absolute angle memory). Future versions would swap in a servo for precision. The pour itself is gloriously unpredictable depending on sleeping position.
+
+![Process 1](assets/process1.png)
+![Process 2](assets/process2.png)
+![Process 3](assets/process3.png)
+![Assembly 1](assets/assembly1.png)
+![Assembly 2](assets/assembly2.png)
+![View 1](assets/view1.png)
+![View 2](assets/view2.png)
+![View 3](assets/view3.png)
+
+## Code & AI Assistance
+
+Code available at [water_alarm_clock.py](https://github.com/thomknoe/INFO-5345/blob/Fall2025/Lab%202/water_alarm_clock.py)
+
+_AI Usage:_ ChatGPT helped write the code—great at remembering context across revisions for both MiniPiTFT and stepper control.
+
+_Pros:_ Fast generation, strong contextual memory.
+
+_Cons:_ Completely blind to hardware/wiring issues (our biggest bug turned out to be a physical pin change).
+
+## Demonstration Videos
+
+[![Clock Demo 1](assets/clock_demo1.png)](https://youtu.be/2jAuKsEkn1A)
+[Watch Clock Demo #1 on YouTube](https://youtu.be/2jAuKsEkn1A)
+
+[![Clock Demo 2](assets/clock_demo2.png)](https://youtu.be/ZMM2v4Hwoms)
+[Watch Clock Demo #2 on YouTube](https://youtu.be/ZMM2v4Hwoms)
+
+[![Clock Demo 3](assets/clock_demo3.png)](https://youtu.be/iekUGyjbt7Q)
+[Watch Clock Demo #3 on YouTube](https://youtu.be/iekUGyjbt7Q)
+
+## Inspiration
+
+I was drawn to Tega Brain’s practice of frustrating modern infrastructures to open up new ways of thinking about time and ecology. Pieces like _Being Radiotropic (2016)_ and _Ecological Time_ imagine clocks governed by organisms or systems outside human control. Additionally, Kathleen McDermott’s _Urban Armor #9_ (2019)—a harness that slaps the wearer at 5:00 pm to end the workday—offered a parallel satirical lens on punitive timekeeping objects.
+
+![Inspiration 1](assets/insp1.png)  
+Tega Brain, _Being Radiotropic_ (2016)
+
+![Inspiration 2](assets/insp2.png)
+![Inspiration 3](assets/insp3.png)  
+Tega Brain, _Ecological Time_
+
+![Inspiration 4](assets/insp4.png)
+Kathleen McDermott, _Urban Armor #9_ (2019)
+
+## Reflections
+
+The clock works convincingly as concept and provocation. The countdown builds genuine anticipation; the pour delivers the punchline. Stepper limitations taught us the value of absolute positioning (use of a servo for next time). AI accelerated code but couldn’t see physical reality—debugging remained firmly human territory. Overall the piece succeeds at turning a daily resentment into shared absurd theater.
