@@ -1,6 +1,6 @@
 # Ph-UI!!!
 
-**Collaborators:** Thomas Knoepffler (Assembly & Developer), Carrie Wang (Drafter & Diagram Maker), Xiaocheng Li (3D Modeling), Julia Chen (Hardware & Developer), Dean Xu (AI Artist)
+**Collaborators:** Thomas Knoepffler (Assembly & Developer), Carrie Wang (Drafter & Diagram Maker), Xiaocheng Li (3D Modeling), Weiching (Julia) Chen (Hardware & Developer), Dean Xu (AI Artist)
 
 <details>
   <summary><strong>Original Lab Brief</strong></summary>
