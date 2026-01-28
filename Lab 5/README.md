@@ -1,6 +1,6 @@
 # Observant Systems
 
-**Collaborators:** Thomas Knoepffler (Cinematographer & Assembly), Carrie Wang (Diagrams & Actor), Xiaocheng Li (3D Modeling & Industrial Design), Julia Chen (Developer & Tester)
+**Collaborators:** Thomas Knoepffler (Cinematographer & Assembly), Carrie Wang (Diagrams & Actor), Xiaocheng Li (3D Modeling & Industrial Design), Weiching (Julia) Chen (Developer & Tester)
 
 <details>
   <summary><strong>Original Lab Brief</strong></summary>
